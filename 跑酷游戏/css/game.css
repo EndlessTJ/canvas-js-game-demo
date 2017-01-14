@@ -1,0 +1,211 @@
+body,html{
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+canvas{
+    background:#000 url("../img/scene/背景4.jpg") repeat-x;
+    background-size: cover;
+}
+.start{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background:#111 url("../img/开始界面/开始.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 2s ease;
+    z-index: 6;
+}
+.start .audio-on{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    right: 20px;
+    top:50px;
+    cursor: pointer;
+}
+.start .audio-on:hover{
+    filter: brightness(0.9);
+}
+.start .audio-off{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    right: 90px;
+    top:50px;
+    background:url("../img/开始界面/关闭声音.png");
+    cursor: pointer;
+
+}
+.start .audio-off:hover{
+    filter: brightness(0.9);
+}
+.start .tips{
+    width:250px;
+    height:130px;
+    background: url("../img/开始界面/帮助.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+
+
+}
+.start .tips:hover{
+    filter: brightness(0.9);
+}
+.fun{
+    height:auto;
+    margin:0 auto;
+    margin-top:230px;
+    display: flex;
+    justify-content: center;
+}
+.start .exit-btn{
+    width:250px;
+    height:130px;
+  /*  position: absolute;
+    bottom:270px;
+    left: 700px;*/
+    background: url("../img/开始界面/退出游戏.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.start .exit-btn:hover{
+    filter: brightness(0.9);
+}
+.start .start-btn{
+    width:250px;
+    height:130px;
+    position: absolute;
+    bottom:400px;
+    left: 0;
+    right:0;
+    margin:0 auto;
+    background: url("../img/开始界面/开始1.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+
+}
+.start .start-btn:hover{
+    filter: brightness(0.9);
+}
+
+/*结束界面*/
+.gameOver{
+    width:600px;
+    height:500px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    margin-top:-999px;
+    border:3px solid #fff;
+    border-radius:15px;
+    transition: margin 2s linear;
+
+
+}
+.gameOver h3{
+    display: block;
+    text-align: center;
+    margin:30px auto ;
+    font-size:30px;
+    color: #fff;
+}
+.gameOver .userName{
+    float: left;
+    margin-left:160px;
+    color: #ddd;
+    font-size: 16px;
+}
+.gameOver .userScore{
+    display: block;
+    float: left;
+    margin-left:160px;
+    color: #ddd;
+    font-size: 16px;
+}
+.score-area{
+    width:80%;
+    margin:0 auto;
+    padding:25px;
+
+}
+.score-area h4{
+    width:100%;
+    margin:15px auto;
+    text-align: center;
+    color: #fff;
+}
+ul,li{
+    list-style: none;
+}
+.score-area li{
+    height:40px;
+    text-align: left;
+    padding-left:30px;
+    line-height: 40px;
+    color: #fff;
+    
+}
+.score-area li:nth-child(2n+1){
+    background: rgba(200,200,200,.3);
+}
+.score-area li:nth-child(2n){
+    background: rgba(200,200,200,.5);
+
+}
+.again{
+    display: block;
+    margin:0 auto;
+    background: #b71111;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+
+    width:300px;
+    border:none;
+    height:60px;
+    cursor: pointer;
+    transition: background .3s linear;
+}
+.again:hover{
+    background:#6d2c2c;
+}
+.dataBox{
+    width:300px;
+    height:100px;
+    position: fixed;
+    top:30px;
+    left: 50px;
+    /*border:1px solid red;*/
+}
+
+.dataBox .life-box{
+    width:80%;
+    height:15px;
+    margin:0 auto;
+    /*border:1px solid red;*/
+    
+}
+.dataBox .life{
+    width:100%;
+    height:100%;
+    background: #8ace25;
+    border-radius: 5px;
+}
+.dataBox .grade{
+    width:100%;
+    height:30px;
+    margin-top:20px;
+    padding-left:30px;
+    z-index: 5;
+    color: #eee;
+}
+.dataBox .grade .num{
+    font-size:25px;
+}

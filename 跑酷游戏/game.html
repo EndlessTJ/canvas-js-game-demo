@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/hitPix.js"></script>
+    <script src="js/run.js"></script>
+    <script src="js/game.js"></script>
+</head>
+<body>
+    <canvas>你的浏览器不支持canvas,请升级浏览器</canvas>
+    <!--跑-->
+    <img src="img/persons/1.png" alt="" class="run" hidden>
+    <img src="img/persons/2.png" alt="" class="run" hidden>
+    <img src="img/persons/3.png" alt="" class="run" hidden>
+    <img src="img/persons/4.png" alt="" class="run" hidden>
+    <img src="img/persons/5.png" alt="" class="run" hidden>
+    <img src="img/persons/6.png" alt="" class="run" hidden>
+    <img src="img/persons/7.png" alt="" class="run" hidden>
+    <img src="img/persons/8.png" alt="" class="run" hidden>
+    <img src="img/persons/9.png" alt="" class="run" hidden>
+    <img src="img/persons/10.png" alt="" class="run" hidden>
+    <img src="img/persons/11.png" alt="" class="run" hidden>
+    <img src="img/persons/12.png" alt="" class="run" hidden>
+    <!--跳-->
+    <img src="img/persons/2.png" alt="" class="jump" hidden>
+    <!--障碍物-->
+    <img src="img/block/1.png" alt="" class="roadblock" hidden>
+    <img src="img/block/2.png" alt="" class="roadblock" hidden>
+    <img src="img/block/3.png" alt="" class="roadblock" hidden>
+    <img src="img/block/4.png" alt="" class="roadblock" hidden>
+    <img src="img/block/5.png" alt="" class="roadblock" hidden>
+    <img src="img/block/6.png" alt="" class="roadblock" hidden>
+    <!--子弹-->
+    <img src="img/子弹/子弹.png" alt="" class="zidan" hidden>
+    <!--声音-->
+    <audio src="img/声音/背景音乐.mp3" class="audio"></audio>
+    <audio src="img/声音/起跳.mp3" class="audio"></audio>
+    <audio src="img/声音/子弹2.mp3" class="audio"></audio>
+    <audio src="img/声音/障碍物爆开.mp3" class="audio"></audio>
+    <audio src="img/声音/游戏失败.mp3" class="audio"></audio>
+    <!--开始界面-->
+
+    <div class="start">
+
+        <span class="audio-on"></span><span class="audio-off"></span>
+        <div class="start-btn"></div>
+        <div class="fun">
+        <div class="exit-btn"></div>
+        <div class="tips"></div>
+        </div>
+    </div>
+
+    <!--分数-->
+    <div class="dataBox">
+    <div class="life-box">
+        <div class="life"></div>
+    </div>
+    <div class="grade"><span>分数：</span><span class="num">0</span></div>
+    </div>
+    <!--结束界面-->
+    <div class="gameOver">
+        <h3>GAME OVER</h3>
+        <span class="userName">tianjin</span><span class="userScore">0</span>
+        <div class="score-area">
+            <h4>高分榜</h4>
+            <ul>
+            </ul>
+        </div>
+        <button class="again btn ">再来一次</button>
+        <div class="exit"></div>
+    </div>
+</body>
+</html>
